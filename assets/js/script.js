@@ -1,6 +1,12 @@
-'use strict';
 
-
+function scrollToElementById(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    console.warn(`Element with ID "${id}" not found.`);
+  }
+}
 
 /**
  * Add eventListener on multiple elements

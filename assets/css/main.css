@@ -1,11 +1,6 @@
 /*-----------------------------------*\
   #main.css
 \*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
 /**
  * TABLE OF CONTENT
  *
@@ -38,7 +33,16 @@
 @import url("./components/card.css");
 
 
-
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+  --first-color: #9BD3CD;
+  --second-color: #FEC448;
+  --third-color: #FF651C;
+}
 
 
 /*-----------------------------------*\
@@ -50,7 +54,28 @@
 .header.active { background-color: var(--white); }
 
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: var(--z-modal);
+}
 
+.first {
+  background-color: var(--first-color);
+}
+
+.second {
+  background-color: var(--second-color);
+  left: 33.3%;
+}
+
+.third {
+  background-color: var(--third-color);
+  left: 66.6%;
+}
 
 
 /*-----------------------------------*\

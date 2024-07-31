@@ -6,12 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name='robots' content='index,follow' />
+  <meta name='geo.placename' content='Linz' />
+  <meta name='geo.position' content='48.318558, 14.300967' />
+  <meta name='ICBM' content='48.318558, 14.300967' />
+  <meta name='description' content='I build solutions' />
+  <meta property='og:url' content='https://schroffner.com' />
+  <meta property='og:site_name' content='<Simon./>' />
+  <meta property='og:type' content='website' />
+  <meta property='og:title' content='Simon Schroffners Portfolio' />
+  <meta property='og:description' content='I build solutions' />
+  <meta property='og:image' content='https://schroffner.com/assets/images/HERO_BANNER.png' />
+
+  <meta property='keywords'
+        content='AI, Big Data, Web Development, Cloud Development, Digital Transformation, Design, Project Management, NLP, LLMs, App Development, Android, IOS, Windows, Linux' />
+
+
   <!-- 
     - primary meta tags
   -->
-  <title>Annie - Web Developer Based on Los Angeles</title>
-  <meta name="title" content="Annie - Web Developer Based on Los Angeles">
-  <meta name="description" content="This is a personal portfolio html template made by codewithsadee">
+  <title> <Simon/> - Software Developer </title>
+  <meta name="title" content="Simon - Software Developer based in Austria">
+  <meta name="description" content="Simons personal website portfolio">
 
   <!-- 
     - favicon
@@ -21,9 +37,7 @@
   <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="./assets/css/css2.css" rel="stylesheet">
 
   <!-- 
     - custom css link
@@ -34,7 +48,7 @@
   <!-- 
     - preload images
   -->
-  <link rel="preload" href="./assets/images/hero-banner.png">
+  <link rel="preload" href="./assets/images/HERO_BANNER.png">
 
 </head>
 
@@ -43,6 +57,10 @@
   <!-- 
     - #PRELOADER
   -->
+
+  <div class="overlay first"></div>
+  <div class="overlay second"></div>
+  <div class="overlay third"></div>
 
   <div class="preloader" data-preloader>
     <div class="preloader-circle"></div>
@@ -60,7 +78,7 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="151" height="28" alt="Annie home">
+        <img src="./assets/images/simon_logo.svg" width="151" height="28" alt="Simon home">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -110,21 +128,21 @@
 
           <div class="hero-content">
 
-            <p class="hero-subtitle">👋, My name is Annie</p>
+            <p class="hero-subtitle">👋, My name is Simon</p>
 
-            <h1 class="headline-lg">I'm a Developer</h1>
+            <h1 class="headline-lg">I build solutions</h1>
 
             <p class="hero-text body-md">
-              Based in Los Angeles, California.
+              For your toughest problems.
             </p>
 
-            <a href="#" class="btn btn-primary">Let's Start</a>
+            <a href="#" class="btn btn-primary" onclick="scrollToElementById('aboutBanner')">Let's Start</a>
 
           </div>
 
           <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" width="680" height="645"
-              alt="Annie, the blonde, dressed in a green hoodie with a smile on her face" class="w-100">
+            <img src="./assets/images/HERO_BANNER.png" width="680" height="645"
+              alt="Simon, the blonde, dressed in a green hoodie with a smile on her face" class="w-100">
           </figure>
 
         </div>
@@ -138,7 +156,7 @@
         - #CLIENT
       -->
 
-      <section class="client" aria-label="Trusted client">
+<!--      <section class="client" aria-label="Trusted client">
         <div class="container">
 
           <ul class="slider">
@@ -166,7 +184,7 @@
           </ul>
 
         </div>
-      </section>
+      </section>-->
 
 
 
@@ -176,37 +194,35 @@
         - #ABOUT
       -->
 
-      <section class="section about" aria-label="about me">
+      <section class="section about" aria-label="about me" id="aboutBanner">
         <div class="container">
 
-          <figure class="about-banner">
-            <img src="./assets/images/about-banner.png" width="580" height="554" loading="lazy"
-              alt="Annie, the blonde, dressed in a black tops with a smile on her face" class="w-100">
+          <figure class="about-banner" >
+            <img src="./assets/images/ABOUT_BANNER.png" width="580" height="554" loading="lazy"
+                 alt = "Simon, black tshirt, dark hair with a smile on his face" class="w-100">
           </figure>
 
           <div class="about-content">
 
-            <h2 class="title-lg">I'm a Freelancer Front-end Developer with over 3 years of experience.</h2>
+            <h2 class="title-lg">I'm a Software Developer</h2>
 
             <p class="body-md section-text">
-              I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and
-              create web elements for amazing people around the world. I like work with new people. New people new
-              Experiences.
+              With 11 years of experience in the ever-evolving world of web development, I've had the privilege of working on a wide range of projects, from small startups to large-scale enterprises. As a seasoned full developer, I honed my skills in crafting innovative, user-centric solutions that drive results.
             </p>
 
             <ul class="about-list">
 
-              <li>
+ <!--             <li>
                 <p class="list-text">
                   <strong class="strong title-md">285+</strong> Projet Completed
                 </p>
-              </li>
+              </li>-->
 
-              <li>
+<!--              <li>
                 <p class="list-text">
                   <strong class="strong title-md">190+</strong> Happy Clients
                 </p>
-              </li>
+              </li>-->
 
             </ul>
 
@@ -242,10 +258,10 @@
                 <div class="card card-sm" style="background-color: hsl(177, 39%, 72%)">
 
                   <div class="card-media">
-                    <ion-icon name="logo-html5"></ion-icon>
+                    <ion-icon name="color-palette-outline"></ion-icon>
                   </div>
 
-                  <h2 class="card-title">HTML</h2>
+                  <h2 class="card-title">Web Design</h2>
 
                 </div>
               </li>
@@ -254,10 +270,10 @@
                 <div class="card card-sm" style="background-color: hsl(41, 99%, 64%)">
 
                   <div class="card-media">
-                    <ion-icon name="logo-css3"></ion-icon>
+                    <ion-icon name="code-slash-outline"></ion-icon>
                   </div>
 
-                  <h2 class="card-title">CSS</h2>
+                  <h2 class="card-title">Development</h2>
 
                 </div>
               </li>
@@ -266,10 +282,10 @@
                 <div class="card card-sm" style="background-color: hsl(19, 97%, 85%)">
 
                   <div class="card-media">
-                    <ion-icon name="logo-react"></ion-icon>
+                    <ion-icon name="stats-chart-outline"></ion-icon>
                   </div>
 
-                  <h2 class="card-title">React JS</h2>
+                  <h2 class="card-title">Planning</h2>
 
                 </div>
               </li>
@@ -278,10 +294,10 @@
                 <div class="card card-sm" style="background-color: hsl(221, 100%, 79%)">
 
                   <div class="card-media">
-                    <ion-icon name="logo-angular"></ion-icon>
+                    <ion-icon name="infinite-outline"></ion-icon>
                   </div>
 
-                  <h2 class="card-title">Angular</h2>
+                  <h2 class="card-title">AI, LLMs & NLP</h2>
 
                 </div>
               </li>
@@ -290,10 +306,10 @@
                 <div class="card card-sm" style="background-color: hsl(76, 39%, 72%)">
 
                   <div class="card-media">
-                    <ion-icon name="logo-apple"></ion-icon>
+                    <ion-icon name="speedometer-outline"></ion-icon>
                   </div>
 
-                  <h2 class="card-title">iOs App</h2>
+                  <h2 class="card-title">Testing</h2>
 
                 </div>
               </li>
@@ -302,10 +318,10 @@
                 <div class="card card-sm" style="background-color: hsl(245, 100%, 90%)">
 
                   <div class="card-media">
-                    <ion-icon name="logo-android"></ion-icon>
+                    <ion-icon name="rocket-outline"></ion-icon>
                   </div>
 
-                  <h2 class="card-title">App Dev</h2>
+                  <h2 class="card-title">Idea -> Market Ready</h2>
 
                 </div>
               </li>
@@ -315,8 +331,8 @@
           </div>
 
           <figure class="skill-banner">
-            <img src="./assets/images/skill-banner.png" width="581" height="657" loading="lazy"
-              alt="Annie, the blonde, dressed in a green hoodie with a smile on her face" class="w-100">
+            <img src="./assets/images/SKILL_BANNER.png" width="581" height="657" loading="lazy"
+                 alt="Simon, black tshirt, dark hair with a smile on his face" class="w-100">
           </figure>
 
         </div>
@@ -340,8 +356,6 @@
 
 
 
-
-
       <!-- 
         - #TESTIMONIALS
       -->
@@ -357,7 +371,7 @@
               <div class="card card-lg">
 
                 <figure class="card-media">
-                  <img src="./assets/images/testi-1.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
+                  <img src="./assets/images/testi-1.jpg" width="100" height="100" loading="lazy" alt="Customer 1"
                     class="img-cover">
                 </figure>
 
@@ -368,9 +382,9 @@
                     industry's standard dummy text ever since the 1500s.
                   </blockquote>
 
-                  <p class="client-name">Jennifer Lutheran</p>
+                  <p class="client-name">Max Mustermann</p>
 
-                  <p class="client-title">CEO at pxdraft</p>
+                  <p class="client-title">CEO at lorem upsum</p>
 
                 </div>
 
@@ -381,7 +395,7 @@
               <div class="card card-lg">
 
                 <figure class="card-media">
-                  <img src="./assets/images/testi-2.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
+                  <img src="./assets/images/testi-2.jpg" width="100" height="100" loading="lazy" alt="Customer 2"
                     class="img-cover">
                 </figure>
 
@@ -392,9 +406,9 @@
                     industry's standard dummy text ever since the 1500s.
                   </blockquote>
 
-                  <p class="client-name">Jennifer Lutheran</p>
+                  <p class="client-name">Max Mustermann</p>
 
-                  <p class="client-title">CEO at pxdraft</p>
+                  <p class="client-title">CEO at lorem upsum</p>
 
                 </div>
 
@@ -405,7 +419,7 @@
               <div class="card card-lg">
 
                 <figure class="card-media">
-                  <img src="./assets/images/testi-3.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
+                  <img src="./assets/images/testi-3.jpg" width="100" height="100" loading="lazy" alt="Customer 3"
                     class="img-cover">
                 </figure>
 
@@ -416,9 +430,9 @@
                     industry's standard dummy text ever since the 1500s.
                   </blockquote>
 
-                  <p class="client-name">Jennifer Lutheran</p>
+                  <p class="client-name">Max Mustermann</p>
 
-                  <p class="client-title">CEO at pxdraft</p>
+                  <p class="client-title">CEO at lorem upsum</p>
 
                 </div>
 
@@ -429,7 +443,7 @@
               <div class="card card-lg">
 
                 <figure class="card-media">
-                  <img src="./assets/images/testi-4.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
+                  <img src="./assets/images/testi-4.jpg" width="100" height="100" loading="lazy" alt="Customer 4"
                     class="img-cover">
                 </figure>
 
@@ -440,9 +454,9 @@
                     industry's standard dummy text ever since the 1500s.
                   </blockquote>
 
-                  <p class="client-name">Jennifer Lutheran</p>
+                  <p class="client-name">Max Mustermann</p>
 
-                  <p class="client-title">CEO at pxdraft</p>
+                  <p class="client-title">CEO at lorem upsum</p>
 
                 </div>
 
@@ -465,62 +479,73 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
-    <div class="container">
+<footer class="footer">
+  <div class="container">
 
-      <ul class="social-list">
+    <ul class="social-list">
 
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
+      <!--        <li>
+                <a href="https://www.linkedin.com/in/simon-schroffner/" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>-->
 
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li>
+      <li>
+        <a href="https://www.instagram.com/its.a.me.simon/" class="social-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
 
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </li>
+      <li>
+        <a href="https://www.linkedin.com/in/simon-schroffner/" class="social-link">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </li>
 
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
+    </ul>
 
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-pinterest"></ion-icon>
-          </a>
-        </li>
+    <p class="text-center">&copy; 2024 copyright all right reserved</p>
+    <a href="./impressum.html" class="social-link">
+      Imprint
+    </a>
 
-      </ul>
-
-      <p class="text-center">&copy; 2022 copyright all right reserved</p>
-
-    </div>
-  </footer>
+  </div>
+</footer>
 
 
 
+<script type="text/javascript" src="./assets/js/cookie-consent.js" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"schroffner.com"});
+    });
+  </script>
 
+  <!-- Clarity -->
+  <script type="text/plain" data-cookie-consent="targeting">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ng48usdghd");
+  </script>
+  <!-- end of Clarity-->
+
+  <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
   <!-- 
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/gsap-loader.js"></script>
 
   <!-- 
     - ionicon
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 
