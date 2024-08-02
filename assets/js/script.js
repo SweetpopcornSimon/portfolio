@@ -60,3 +60,37 @@ const activeHeader = function () {
 }
 
 window.addEventListener("scroll", activeHeader);
+
+
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+  e.preventDefault()
+  preloader.classList.remove("loaded");
+  grecaptcha.ready(function() {
+    grecaptcha.execute('6LcBBx4qAAAAAPVlCyLq2J9SJWi4GLzoiOgRbQvS', {action: 'submit'}).then(function(token) {
+      emailjs.sendForm('service_n4rettp','template_y1l1p3m','#contact-form','TwGb14PNZjf9DqVpC')
+          .then(() =>{
+            preloader.classList.add("loaded");
+            // Show sent message
+            contactMessage.textContent = 'Message sent successfully ✅'
+
+            // Remove message after five seconds
+            setTimeout(() =>{
+              contactMessage.textContent = ''
+            }, 5000)
+
+            // Clear input fields
+            contactForm.reset()
+
+          }, () =>{
+            preloader.classList.add("loaded");
+            // Show error message
+            contactMessage.textContent = 'Message not sent (service error) ❌'
+          })
+    });
+  });
+}
+
+contactForm.addEventListener('submit', sendEmail)

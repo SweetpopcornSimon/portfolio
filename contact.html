@@ -22,7 +22,7 @@
   <meta property='og:type' content='website' />
   <meta property='og:title' content='Simon Schroffners Portfolio' />
   <meta property='og:description' content='I build solutions' />
-  <meta property='og:image' content='https://schroffner.com/assets/images/HERO_BANNER.png' />
+  <meta property='og:image' content='https://schroffner.com/assets/images/og.jpg' />
 
   <meta property='keywords'
         content='AI, Big Data, Web Development, Cloud Development, Digital Transformation, Design, Project Management, NLP, LLMs, App Development, Android, IOS, Windows, Linux' />
@@ -116,7 +116,7 @@
         style="background-image: url('./assets/images/contact-bg.png');height: calc(100vh - 100px);">
         <div class="container">
 
-          <form action="" class="contact-form">
+          <form action="" class="contact-form" id="contact-form">
 
             <h2 class="headline-sm" id="contact-label">Get in touch</h2>
 
@@ -129,25 +129,30 @@
               <div>
                 <label for="name" class="label">First name</label>
 
-                <input type="text" name="name" id="name" placeholder="Name *" required class="input-field">
+                <input type="text" name="user_name" id="name" placeholder="Name *" required class="input-field">
               </div>
 
               <div>
                 <label for="email" class="label">Your Email </label>
 
-                <input type="email" name="email" id="email" placeholder="Email *" required class="input-field">
+                <input type="email" name="user_email" id="email" placeholder="Email *" required class="input-field">
               </div>
 
             </div>
 
             <label for="subject" class="label">Subject</label>
-            <input type="text" name="subject" id="subject" placeholder="Subject *" class="input-field">
+            <input type="text" name="user_subject" id="subject" placeholder="Subject *" class="input-field">
 
             <label for="message" class="label">Your message </label>
-            <textarea name="message" id="message" placeholder="Your message *" required class="input-field"></textarea>
+            <textarea name="user_message" id="message" placeholder="Your message *" required class="input-field"></textarea>
 
-            <a href="#" class="btn btn-tertiary">Send Message</a>
 
+            <p class="contact__message" id="contact-message"></p>
+
+            <button type="submit"
+                    class="btn btn-tertiary">
+              <i class="ri-send-plane-line"></i> Send Message
+            </button>
           </form>
 
           <div class="contact-content">
@@ -281,7 +286,10 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcBBx4qAAAAAPVlCyLq2J9SJWi4GLzoiOgRbQvS"></script>
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
 </body>
 
 </html>
