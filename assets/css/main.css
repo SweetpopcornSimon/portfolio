@@ -44,6 +44,30 @@
   --third-color: #FF651C;
 }
 
+.termsfeed-com---palette-light .cc-nb-changep {
+  background-color: var(--second-color) !important;
+  color: #000;
+}
+
+.termsfeed-com---palette-light .cc-nb-reject {
+  background: var(--first-color) !important;
+  background-color: var(--third-color) !important;
+}
+
+
+.termsfeed-com---palette-light .cc-cp-foot-save {
+  background-color: var(--third-color) !important;
+  color: #000;
+}
+
+.termsfeed-com---palette-light .cc-nb-okagree {
+  background-color: var(--first-color) !important;
+}
+
+.termsfeed-com---pc-dialog input[type=checkbox].cc-custom-checkbox:checked + label:before {
+  background: var(--first-color) !important;
+}
+
 
 /*-----------------------------------*\
   #HEADER
